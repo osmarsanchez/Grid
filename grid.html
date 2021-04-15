@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="grid.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#icon').click(function () {
+        $('ul').toggleClass('show');
+      });
+    });
+  </script>
+</head>
+
+<body class="grid-container">
+  <header class="header">
+    <nav>
+      <label class="logo">MIT Connection</label>
+      <ul>
+        <li> <a class="active" href="#"> Perfil </a> </li>
+        <li> <a href="#"> Mensajes </a> </li>
+        <li> <a href="#"> Ajustes</a> </li>
+      </ul>
+      <label id="icon">
+        <i class="fas fa-bars"></i>
+      </label>
+
+    </nav>
+  </header>
+  <!-- <nav class="navbar">NAVBAR</nav> -->
+
+  <article class="main">Aquí van pendejos para mensajes</article>
+  <aside class="sidebar">Contactos del pendejo</aside>
+  <footer class="footer">FOOTER</footer>
+</body>
+
+</html>
